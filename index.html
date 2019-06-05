@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BERLIN</title>
+	<style type="text/css">
+		.wrap {width: 1200px; margin: auto;}
+
+		.s1 {background-image: url('1.jpg'); background-size: cover; position: relative;}
+		.s1 .s1-1 {width: 400px; position: absolute; top:50px; left:400px;}
+		.s1 .s1-2 {width: 200px; position: absolute; top:850px; left:30px;}
+		.s1 .s1-3 {width: 300px; position: absolute; top:850px; right:30px;}		
+		.s1 h1 {text-align: center; font-size: 5em; color: white; text-shadow: 1px 2px 3px black; margin: 0px; padding-top: 125px; line-height: 1.45em;}
+
+		.s2 {position: relative;}
+		.s2 .s2-1 {width: 1200px;}
+		.s2 .s2-2 {width: 500px; position: absolute; bottom: 930px; left: 360px;}
+		.s2 .s2-3 {width: 250px; position: absolute; bottom: 1150px; left: 100px;}
+		.s2 .s2-4 {width: 250px; position: absolute; bottom: 1150px; left: 900px;}	
+		.s2 .s2-5 {width: 300px; position: absolute; bottom: 350px; left: 900px;}
+		.s2 .s2-6 {width: 200px; position: absolute; bottom: 680px; left: 110px;}
+
+		.s3 {position: relative;}
+		.s3 .s3-1 {width: 1200px; margin-top: 200px;}
+		.s3 .p1 {width: 300px; position: absolute; top:350px; left:200px;}
+		.s3 .p2 {width: 300px; position: absolute; top:950px; right: 200px;}
+		.s3 .p3 {width: 300px; position: absolute; top:1550px; left: 200px;}
+		.s3 .p4 {width: 300px; position: absolute; top:2150px; right: 200px;}
+		.s3 .s3-2 {width: 1200px; position: absolute; top: 780px;}
+		.s3 .s3-3 {width: 1200px; position: absolute; top: 1480px;}
+		.s3 .s3-4 {width: 1200px; position: absolute; top: 1700px;}
+		.s3 .s3-5 {width: 1200px; position: absolute; top: 2400px;}
+		.s3 .s3-6 {width: 1200px; position: absolute; top: 2630px;}
+
+		.s4 {position: relative;}
+		.s4 .s4-1 {width: 1200px; position: absolute; top: 2300px;}
+		.s4 .n1 {width: 300px; position: absolute; top:2600px; left:200px;}
+		.s4 .n2 {width: 300px; position: absolute; top:3400px; right:250px;}
+		.s4 .s4-2 {width: 300px; position: absolute; top: 2350px; right: 0px;}
+		.s4 .s4-3 {width: 1000px; position: absolute; top: 3200px; left: 0px;}
+		.s4 .s4-4 {width: 700px; position: absolute; top: 3150px; left: 0px;}
+		.s4 .s4-5 {width: 750px; position: absolute; top: 3150px; right: 0px;}
+		.s4 .s4-6 {width: 1200px; position: absolute; top: 3550px; right: 0px;}
+		.s4 .s4-7 {width: 1200px; position: absolute; top: 4000px; right: 0px;}
+		.s4 .s4-8 {width: 400px; position: absolute; top: 4050px; left: 0px;}
+
+		.s5 {position: relative;}
+		.s5 .s5-1 {width: 1200px; position: absolute; top: 5000px;}
+		.s5 .s5-2 {width: 500px; position: absolute; top: 4850px;}
+		.s5 .f1 {width: 300px; position: absolute; top: 6500px; left:320px;}
+		.s5 .s5-3 {width: 550px; position: absolute; top: 4900px; right: 0px;}
+		.s5 .s5-4 {width: 400px; position: absolute; top: 5600px; left: 400px;}
+		.s5 .s5-5 {width: 200px; position: absolute; top: 5400px; left: 180px;}
+		.s5 .f2 {width: 300px; position: absolute; top: 5900px; right:200px;}
+		.s5 .s5-6 {width: 350px; position: absolute; top: 5500px; right: 0px;}
+		.s5 .s5-7 {width: 200px; position: absolute; top: 5540px; left: 480px;}
+		.s5 .s5-8 {width: 400px; position: absolute; top: 6180px; left: 300px;}
+		.s5 .s5-9 {width: 500px; position: absolute; top: 6580px; right: 100px;}
+		.s5 .s5-10 {width: 400px; position: absolute; top: 6750px; left: 0px;}
+		.s5 .s5-11 {width: 200px; position: absolute; top: 6980px; left: 350px;}
+		.s5 .s5-12 {width: 300px; position: absolute; top: 5980px; right: 0px;}
+
+		.s6 {position: relative;}
+		.s6 .s6-8 {width: 1200px; position: absolute; top: 8500px;}
+		.s6 .v1 {width: 300px; position: absolute; top:7900px; left:200px;}
+		.s6 .s6-1 {width: 300px; position: absolute; top: 7800px; left:30px;}
+		.s6 .s6-2 {width: 1200px; position: absolute; top: 7800px;}
+		.s6 .v2 {width: 300px; position: absolute; top: 8350px; right:200px;}	
+		.s6 .s6-3 {width: 500px; position: absolute; top: 8400px; left:0px;}
+		.s6 .s6-4 {width: 800px; position: absolute; top: 8200px; right:0px;}
+		.s6 .s6-5 {width: 400px; position: absolute; top: 8400px; left:200px;}
+		.s6 .s6-6 {width: 800px; position: absolute; top: 8700px; left:400px;}
+		.s6 .s6-7 {width: 400px; position: absolute; top: 8980px; right:0px;}
+		.s6 .s6-9 {width: 500px; position: absolute; top: 9100px; left:0px;}
+
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<section class="s1">
+			<img class="s1-1" src="1.png">
+			<img class="s1-2" src="2.png">
+			<img class="s1-3" src="3.png">
+			<div>
+				<h1>베를린은 독일의 수도이다.<br>2014년 12월 현재<br>인구 3,562,166명으로,<br>독일 내 단일 규모로는<br>최대의 도시이다.<br>독일 북동부 슈프레강과<br>하펠강 연안에 있다.<br>도시 전체가<br>브란덴부르크주에<br>둘러싸여 있으며<br>베를린8자체도 연방주이다.</h1>			
+			</div>
+ 		</section>
+
+ 		<section2 class="s2">
+ 			<img class="s2-1" src="2.jpg">
+ 			<img class="s2-2" src="4.png">
+ 			<img class="s2-3" src="5.png">
+ 			<img class="s2-4" src="6.png">
+ 			<img class="s2-5" src="7.png">
+ 			<img class="s2-6" src="8.png">
+  		</section>
+
+  		<section class="s3">
+  			<img class="s3-1" src="9.png">
+  			<img class="s3-2" src="10.png">
+   			<img class="s3-3" src="11.png">
+   			<img class="s3-4" src="12.png">
+   			<img class="s3-5" src="13.png">
+   			<img class="s3-6" src="14.png">
+   			<img class="p1" src="p1.png">
+   			<img class="p2" src="p2.png">
+   			<img class="p3" src="p3.png">
+   			<img class="p4" src="p4.png">
+
+  		</section>
+
+  		<section class="s4">
+  			<img class="s4-1" src="15.png">
+  			<img class="s4-2" src="16.png">
+  			<img class="s4-3" src="17.png">
+  			<img class="s4-4" src="18.png">
+  			<img class="s4-5" src="19.png">
+  			<img class="s4-6" src="20.png">
+  			<img class="s4-7" src="21.png">
+  			<img class="s4-8" src="22.png">
+  			<img class="n1" src="n1.png">
+  			<img class="n2" src="n2.png">
+
+  		</section>
+
+  		<section class="s5">
+  			<img class="s5-1" src="23.png">
+  			<img class="s5-2" src="3.jpg">
+  			<img class="s5-3" src="24.png">
+  			<img class="s5-4" src="25.png">
+  			<img class="s5-5" src="26.png">
+  			<img class="s5-6" src="27.png">
+  			<img class="s5-7" src="28.png">
+  			<img class="s5-8" src="29.png">
+  			<img class="s5-9" src="30.png">
+  			<img class="s5-10" src="31.png">
+  			<img class="s5-11" src="32.png">
+  			<img class="s5-12" src="33.png">
+  			<img class="f1" src="f1.png">
+  			<img class="f2" src="f2.png">
+
+  		</section>
+
+  		<section class="s6">
+  			<img class="s6-8" src="41.png">
+  			<img class="s6-1" src="34.png">
+  			<img class="s6-2" src="35.png">
+  			<img class="s6-3" src="36.png">
+  			<img class="s6-4" src="37.png">
+  			<img class="s6-5" src="38.png">
+  			<img class="s6-6" src="39.png">
+  			<img class="s6-7" src="40.png">
+  			<img class="s6-9" src="42.png">
+  			<img class="v1"	src="v1.png">		
+  			<img class="v2"	src="v2.png">		
+
+  		</section>
+
+	</div>
+</body>
+</html>
